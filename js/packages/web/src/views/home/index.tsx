@@ -1,19 +1,29 @@
-import { Layout } from 'antd';
-import React from 'react';
-import { useStore } from '@oyster/common';
-import { useMeta } from '../../contexts';
-import { AuctionListView } from './auctionList';
-import { SetupView } from './setup';
+
+import React, {FC} from 'react';
+import {AboutUs, WhyUs} from "../../components/AboutUs/AboutUs";
+import {Rarity} from "../../components/Rarity/Rarity";
+import {Creators} from "../../components/Creators/Creators";
+import {FAQ} from "../../components/FAQ/FAQ";
 
 export const HomeView = () => {
-  const { isLoading, store } = useMeta();
-  const { isConfigured } = useStore();
-
-  const showAuctions = (store && isConfigured) || isLoading;
-
   return (
-    <Layout style={{ margin: 0, marginTop: 30, alignItems: 'center' }}>
-      {showAuctions ? <AuctionListView /> : <SetupView />}
-    </Layout>
+   <div >
+     <AboutUs/>
+     <WhyUs/>
+     <Rarity/>
+     <Creators/>
+     <FAQ/>
+     <Footer/>
+   </div>
   );
 };
+export const Footer: FC = () =>{
+  return(
+    <div>
+      <div style={{paddingTop: '100px', paddingBottom: '20px'}}>
+        <div className='vertical-line'/>
+      </div>
+      <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the Company Name Team 🔥 </div>
+    </div>
+  );
+}

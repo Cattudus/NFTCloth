@@ -71,6 +71,13 @@ export const ArtworksView = () => {
     </Masonry>
   );
 
+  function NoNFT(){
+    if(!isLoading && storeIndexer.length ===0){
+    return(<div className="inside-text">You dont have any NFT's</div>);
+    }
+    return (<div/>);
+  }
+
   return (
     <Layout style={{ margin: 0, marginTop: 30 }}>
       <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
@@ -81,31 +88,29 @@ export const ArtworksView = () => {
               onTabClick={key => setActiveKey(key as ArtworkViewState)}
             >
               <TabPane
-                tab={<span className="tab-title">All</span>}
+                tab={<span className="tab-title">My Drops</span>}
                 key={ArtworkViewState.Metaplex}
               >
-                {artworkGrid}
+                <div>Helo</div>
               </TabPane>
               {connected && (
                 <TabPane
-                  tab={<span className="tab-title">Owned</span>}
+                  tab={<span className="tab-title">Owned NFT</span>}
                   key={ArtworkViewState.Owned}
                 >
+                  <NoNFT/>
                   {artworkGrid}
                 </TabPane>
               )}
               {connected && (
                 <TabPane
-                  tab={<span className="tab-title">Created</span>}
+                  tab={<span className="tab-title">My Orders</span>}
                   key={ArtworkViewState.Created}
                 >
-                  {artworkGrid}
+                  <div>Helo</div>
                 </TabPane>
               )}
             </Tabs>
-            {connected && storeIndexer.length && (
-              <a onClick={() => pullAllMetadata()}>Load all metadata</a>
-            )}
           </Row>
         </Col>
       </Content>

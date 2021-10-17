@@ -41,16 +41,6 @@ export function Routes() {
             <Route exact path="/artists" component={() => <ArtistsView />} />
             <Route
               exact
-              path="/auction/create/:step_param?"
-              component={() => <AuctionCreateView />}
-            />
-            <Route
-              exact
-              path="/auction/:id"
-              component={() => <AuctionView />}
-            />
-            <Route
-              exact
               path="/auction/:id/billing"
               component={() => <BillingView />}
             />
