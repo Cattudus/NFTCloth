@@ -60,6 +60,11 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
           {connected ? 'My Profile' : 'My Profile'}
         </Button>
       </Link>
+      <Link to={`/shop`} hidden={!connected}>
+        <Button className="app-btn">
+          {connected ? 'Shop' : ''}
+        </Button>
+      </Link>
     </div>
   );
 };
@@ -86,6 +91,13 @@ const MetaplexMenu = () => {
                 <Link to={`/artworks`}>
                   <Button className="app-btn" hidden={!connected}>
                     {connected ? 'My Profile' : ''}
+                  </Button>
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link to={`/shop`}>
+                  <Button className="app-btn" hidden={!connected}>
+                    {connected ? 'Shop' : ''}
                   </Button>
                 </Link>
               </Menu.Item>

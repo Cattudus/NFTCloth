@@ -13,6 +13,7 @@ import {
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
+import {Shop} from "./views/shop";
 
 export function Routes() {
   return (
@@ -39,6 +40,7 @@ export function Routes() {
             <Route exact path="/art/:id" component={() => <ArtView />} />
             <Route exact path="/artists/:id" component={() => <ArtistView />} />
             <Route exact path="/artists" component={() => <ArtistsView />} />
+            <Route exact path="/shop" component={() => <Shop />} />
             <Route
               exact
               path="/auction/:id/billing"

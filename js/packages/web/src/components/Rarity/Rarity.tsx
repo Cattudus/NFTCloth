@@ -57,7 +57,7 @@ export class Rarity extends React.Component{
                 <div className="rarity-grid">
                     {this.data.map((card) => <div>
                         <this.RarityCard key={card.id} card={card}/>
-                        {card.fields.map((item) => <this.RarityField field={item} />)}
+                        {card.fields.map((item) => <this.RarityField key={item.type} field={item} />)}
                     </div>)}
                 </div>
             </div>
