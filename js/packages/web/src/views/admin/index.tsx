@@ -109,12 +109,12 @@ export const AdminView = () => {
 };
 
 function ArtistModal({
-  setUpdatedCreators,
-  uniqueCreatorsWithUpdates,
-}: {
+                       setUpdatedCreators,
+                       uniqueCreatorsWithUpdates,
+                     }: {
   setUpdatedCreators: React.Dispatch<
     React.SetStateAction<Record<string, WhitelistedCreator>>
-  >;
+    >;
   uniqueCreatorsWithUpdates: Record<string, WhitelistedCreator>;
 }) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -122,6 +122,7 @@ function ArtistModal({
   return (
     <>
       <Modal
+        className={'modal-box'}
         title="Add New Artist Address"
         visible={modalOpen}
         onOk={() => {
@@ -170,17 +171,17 @@ function ArtistModal({
 }
 
 function InnerAdminView({
-  store,
-  whitelistedCreatorsByCreator,
-  connection,
-  wallet,
-  connected,
-}: {
+                          store,
+                          whitelistedCreatorsByCreator,
+                          connection,
+                          wallet,
+                          connected,
+                        }: {
   store: ParsedAccount<Store>;
   whitelistedCreatorsByCreator: Record<
     string,
     ParsedAccount<WhitelistedCreator>
-  >;
+    >;
   connection: Connection;
   wallet: WalletSigner;
   connected: boolean;
@@ -190,11 +191,12 @@ function InnerAdminView({
   );
   const [updatedCreators, setUpdatedCreators] = useState<
     Record<string, WhitelistedCreator>
-  >({});
-  const [filteredMetadata, setFilteredMetadata] = useState<{
-    available: ParsedAccount<MasterEditionV1>[];
-    unavailable: ParsedAccount<MasterEditionV1>[];
-  }>();
+    >({});
+  const [filteredMetadata, setFilteredMetadata] =
+    useState<{
+      available: ParsedAccount<MasterEditionV1>[];
+      unavailable: ParsedAccount<MasterEditionV1>[];
+    }>();
   const [loading, setLoading] = useState<boolean>();
   const { metadata, masterEditions } = useMeta();
   const state = useMeta();
@@ -268,7 +270,7 @@ function InnerAdminView({
   ];
 
   return (
-    <Content>
+    <Content className={'admin-content'}>
       <Col style={{ marginTop: 10 }}>
         <Row>
           <Col span={21}>
