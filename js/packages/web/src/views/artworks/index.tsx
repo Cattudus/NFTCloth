@@ -71,12 +71,12 @@ export const ArtworksView = () => {
     </Masonry>
   );
 
-  function NoNFT(){
-    if(!isLoading && storeIndexer.length ===0){
-    return(<div className="inside-text">You dont have any NFT's</div>);
-    }
-    return (<div/>);
-  }
+  //function NoNFT(){
+    //if(!isLoading && storeIndexer.length ===0){
+    //return(<div className="inside-text">You dont have any NFT's</div>);
+   // }
+   // return (<div/>);
+  //}
 
   return (
     <Layout style={{ margin: 0, marginTop: 30 }}>
@@ -98,7 +98,6 @@ export const ArtworksView = () => {
                   tab={<span className="tab-title">Owned NFT</span>}
                   key={ArtworkViewState.Owned}
                 >
-                  <NoNFT/>
                   {artworkGrid}
                 </TabPane>
               )}

@@ -32,11 +32,6 @@ const UserActions = () => {
               <Button className="app-btn">Create</Button>
             </Link>
           ) : null}
-          <Link to={`/auction/create/0`}>
-            <Button className="connector" type="primary">
-              Sell
-            </Button>
-          </Link>
         </>
       )}
     </>
@@ -87,15 +82,15 @@ const MetaplexMenu = () => {
                   <Button className="app-btn">Home</Button>
                 </Link>
               </Menu.Item>
-              <Menu.Item>
-                <Link to={`/artworks`}>
+              <Menu.Item hidden={!connected}>
+                <Link to={`/artworks`} hidden={!connected}>
                   <Button className="app-btn" hidden={!connected}>
                     {connected ? 'My Profile' : ''}
                   </Button>
                 </Link>
               </Menu.Item>
-              <Menu.Item>
-                <Link to={`/shop`}>
+              <Menu.Item hidden={!connected}>
+                <Link to={`/shop`} hidden={!connected}>
                   <Button className="app-btn" hidden={!connected}>
                     {connected ? 'Shop' : ''}
                   </Button>
@@ -126,7 +121,7 @@ export const AppBar = () => {
         <div className="app-right app-bar-box">
           <UserActions />
           <CurrentUserBadge
-            showBalance={false}
+            showBalance={true}
             showAddress={false}
             iconSize={24}
           />

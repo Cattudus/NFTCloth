@@ -558,7 +558,7 @@ export function Notifications() {
   );
 
   const justContent = (
-      <h1 className="title">M</h1>
+      <h1 className="title">SP</h1>
   );
 
   if (notifications.length === 0) return justContent;
