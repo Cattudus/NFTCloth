@@ -9,6 +9,9 @@ import {AuctionListView} from "./auctionList";
 import {SetupView} from "./setup";
 
 export const HomeView = () => {
+  // const doc = document.querySelectorAll(".ant-layout")
+  // console.log( doc[0] )
+  // doc[0].attributes[1].value =''
   const { isLoading, store } = useMeta();
   const { isConfigured } = useStore();
 

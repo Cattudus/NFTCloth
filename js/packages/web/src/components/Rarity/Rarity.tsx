@@ -23,8 +23,8 @@ export class Rarity extends React.Component{
             border= '4px solid #49084a'
         }
         if (props.field.rarity === 'LEGENDARY'){
-            color= '#fcc603'
-            border= '4px solid #ba9202'
+            color= '#806400'
+            border= '4px solid #4d3c00'
         }
         if (props.field.rarity === 'RARE'){
             color= 'green'
