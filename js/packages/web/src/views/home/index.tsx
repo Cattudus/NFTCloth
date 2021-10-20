@@ -7,6 +7,7 @@ import {FAQ} from "../../components/FAQ/FAQ";
 import {useMeta, useStore} from "@oyster/common";
 import {AuctionListView} from "./auctionList";
 import {SetupView} from "./setup";
+import {RoadMap} from "../../components/RoadMap/RoadMap";
 
 export const HomeView = () => {
   // const doc = document.querySelectorAll(".ant-layout")
@@ -25,6 +26,7 @@ export const HomeView = () => {
         <Rarity/>
         <Creators/>
         <FAQ/>
+        <RoadMap/>
         <Footer/>
       </div> : <SetupView />}
       </div>
