@@ -24,9 +24,9 @@ export const HomeView = () => {
         <AboutUs/>
         <WhyUs/>
         <Rarity/>
+        <RoadMap/>
         <Creators/>
         <FAQ/>
-        <RoadMap/>
         <Footer/>
       </div> : <SetupView />}
       </div>
