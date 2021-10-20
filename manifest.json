@@ -1,6 +1,6 @@
 {
-  "name": "Our NFT NAME",
-  "short_name": "Our NFT NAME",
+  "name": "SpookySpooks",
+  "short_name": "SpookySpooks",
   "display": "standalone",
   "start_url": "./",
   "theme_color": "#002140",
