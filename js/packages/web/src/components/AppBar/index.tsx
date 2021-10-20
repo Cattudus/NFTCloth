@@ -27,11 +27,6 @@ const UserActions = () => {
           {/* <Link to={`#`}>
             <Button className="app-btn">Bids</Button>
           </Link> */}
-          {canCreate ? (
-            <Link to={`/art/create`}>
-              <Button className="app-btn">Create</Button>
-            </Link>
-          ) : null}
         </>
       )}
     </>
