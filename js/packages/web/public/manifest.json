@@ -1,6 +1,6 @@
 {
-  "name": "SpookySpooks",
-  "short_name": "SpookySpooks",
+  "name": "Spooky Spooks",
+  "short_name": "Spooky Spooks",
   "display": "standalone",
   "start_url": "./",
   "theme_color": "#002140",

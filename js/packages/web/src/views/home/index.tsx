@@ -8,11 +8,14 @@ import {useMeta, useStore} from "@oyster/common";
 import {AuctionListView} from "./auctionList";
 import {SetupView} from "./setup";
 import {RoadMap} from "../../components/RoadMap/RoadMap";
+import {ClothingCarousel} from "../../components/ClothingCarousel";
 
 export const HomeView = () => {
-  // const doc = document.querySelectorAll(".ant-layout")
-  // console.log( doc[0] )
-  // doc[0].attributes[1].value =''
+  //Remove metaplex title
+  const doc = document.querySelector(".ant-layout")
+  if(doc){
+  console.log( doc.setAttribute('title',''))
+  }
   // const { isLoading, store } = useMeta();
   // const { isConfigured } = useStore();
   //
@@ -32,6 +35,7 @@ export const MainView = () => {
     <div >
       <AboutUs/>
       <WhyUs/>
+      <ClothingCarousel/>
       {/*<Rarity/>*/}
       <RoadMap/>
       <Creators/>
@@ -47,7 +51,7 @@ export const Footer: FC = () =>{
       <div style={{paddingTop: '100px', paddingBottom: '20px'}}>
         <div className='vertical-line'/>
       </div>
-      <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the Company Name Team 🔥 </div>
+      <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the Spooky Spooks Team 👻 </div>
     </div>
   );
 }
