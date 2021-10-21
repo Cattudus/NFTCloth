@@ -32,7 +32,7 @@ export const MainView = () => {
     <div >
       <AboutUs/>
       <WhyUs/>
-      {/*<Rarity/>*/}
+      <Rarity/>
       <RoadMap/>
       <Creators/>
       <FAQ/>
