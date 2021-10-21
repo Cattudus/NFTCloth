@@ -10,6 +10,9 @@ img:not([src]) {
   visibility: hidden;
 }
 
+section {
+  padding: 0 !important;
+}
 
 .app-logo {
   background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZDgzYWViIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTQwLjM2LDUwLjkxYzAuMDA3LTguMTc0LDMuODM2LTExLjUyNSw3LjA0OC0xMi44OThjNi41NTEtMi44MDEsMTYuNzksMC4xNDEsMjMuODA5LDYuODQyICBjMS4yNDYsMS4xODksMi4zNjEsMi4zMDksMy4zNjUsMy4zNjhjLTUuNjg0LTguMzcyLTE1LjAyNS0xNy41NjYtMjkuMDY0LTE4Ljg1OWMtNy43OTQtMC43MTYtMTMuNzk0LDIuNzk5LTE2LjAzMyw5LjQwOCAgYy0yLjY0OSw3LjgyMSwwLjM0MSwxOS4zMDUsMTEuMTgxLDI2LjEyMmM2LjE1MywzLjg2OSwxMi4zLDYuODY5LDE3LjM0MSw5LjA0NWMtMC41NTEtMC4zNTQtMS4xMDUtMC43MTYtMS42Ni0xLjA5MSAgQzQ1LjczMyw2NS42NjIsNDAuMzU0LDU4LjI4MSw0MC4zNiw1MC45MXoiPjwvcGF0aD48cGF0aCBkPSJNNjAuMDI3LDYzLjc2MWMtMC4wNzgtNC43MTUsMS44OTgtOC4yNSw1LjQyMi05LjY5OGM0LjEzOS0xLjcsOS40OS0wLjAwNCwxMy42MzMsNC4zMjMgIGMwLjY5MSwwLjcyMywxLjMwMywxLjQ1MywxLjg3NSwyLjE4NGMtMS42NzQtMy42OTktNC41MS03Ljk1OC0xMS4xMjEtMTQuMjY5Yy02LjM3MS02LjA4MS0xNS44NzktOC45MTItMjEuNjQyLTYuNDUgIGMtMy44MTIsMS42MjktNS44MjksNS40NTQtNS44MzQsMTEuMDYxYy0wLjAxLDExLjgxNSwxNi4zMTIsMjEuNjQ2LDI1LjA3MiwyNi4wNzJDNjMuNzc1LDczLjc0Niw2MC4xMTUsNjkuMTY4LDYwLjAyNyw2My43NjF6Ij48L3BhdGg+PHBhdGggZD0iTTI3LjU5MSwzOC4xM2MyLjU1Ni03LjU0NSw5LjMzMS0xMS41NjgsMTguMTExLTEwLjc1OGMxMS41MjksMS4wNjEsMjAuMDE1LDcuMTQ4LDI2LjAxMywxMy45MiAgQzYxLjUsMjYuMDU0LDQ4Ljk2MywyMC4zMzksNDguODE3LDIwLjI3NGMtMy4yOTYtMS42ODgtNi43OTctMi41MzEtMTAuNDU3LTIuNTMxYy0xMi43NzQsMC0yMy4xNjcsMTAuNTgtMjMuMTY3LDIzLjU4MyAgYzAsNy45NjEsNC4yMDEsMTUuNTIxLDExLjIzOCwyMC4yMjJjMy43ODksMi41MywxMS40ODgsNS44MjQsMjAuMDQ2LDkuMDM4Yy0yLjI1NC0xLjIxNS00LjU2NC0yLjU0Ny02Ljg3NS00ICBDMjcuODg1LDU5LjIxOSwyNC42OSw0Ni42OTQsMjcuNTkxLDM4LjEzeiI+PC9wYXRoPjxwYXRoIGQ9Ik03Ny42MzcsNTkuNzY5Yy0zLjU2OC0zLjcyOS04LjA1Ny01LjI0Mi0xMS40MjgtMy44NTVjLTIuNzIxLDEuMTE4LTQuMjQ2LDMuOTY3LTQuMTgyLDcuODE0ICBjMC4xNDgsOS4wMzUsMTEuMzEzLDE1LjMxOCwxMy41ODgsMTYuNTkyYzMuNDg5LDEuOTU0LDcuNjI1LDIuMDg3LDcuOTA0LDEuOTM4czAuMjc5LTAuMTQ5LDAuNTMxLTAuNjUxICBjMC42Ni0xLjMwOSwxLjA1My00LjI3NSwwLjM2MS04Ljk2NkM4My43NzcsNjkuNDg5LDgyLjA5Niw2NC40MjcsNzcuNjM3LDU5Ljc2OXoiPjwvcGF0aD48L3N2Zz4=');
@@ -38,11 +41,13 @@ img:not([src]) {
 .ant-card-cover {
   position: relative;
   overflow: hidden;
+
   .ant-image-img,
   video {
     height: 300px;
     object-fit: cover;
   }
+
   iframe {
     height: 300px;
     object-fit: cover;
@@ -116,6 +121,7 @@ img:not([src]) {
   height: 100%;
   cursor: pointer;
   margin-left: 10px;
+
   :hover {
     color: @text-color;
   }
@@ -156,71 +162,63 @@ img:not([src]) {
 model-viewer {
   --poster-color: transparent;
 }
-body{
+
+body {
   background-color: var(--main-color);
   overflow-x: hidden;
 }
+
 :root {
   --main-color: #09080d;
   --header-size: 30px;
   --text-size: 20px;
   --secondary-color: #16151a;
 }
-@media (max-width:1400px) {
-  .about-us{
+
+@media (max-width: 1400px) {
+  .about-us {
     display: block !important;
   }
-  .nft-holder{
+
+  .nft-holder {
     padding-top: 20px;
     padding-left: 0 !important;
   }
 }
-.app-bar{
+
+.app-bar {
   background-color: var(--main-color) !important;
 }
-.toolbar{
+
+.toolbar {
   display: flex !important;
   justify-content: space-between;
 }
-.wallet-adapter-button{
-  background-color: gray !important;
-  height: 30px !important;
-  width: 105px;
-  font-size: 10px !important;
-}
-@media (min-width:650px) {
-  .navigation {
-    padding-right: 220px;
-  }
-  .logo {
-    padding-left: 17%;
-  }
-}
-.navigation{
-  display: flex;
-  align-items: center;
-  justify-content:flex-end;
-}
-.text-header{
+
+.text-header {
   font-size: var(--header-size);
-  font-weight: bold;
+  font-weight: 1000;
   padding-bottom: 10px;
   color: white;
 }
-.web-body{
+
+.web-body {
   padding-left: 18%;
   padding-right: 18%;
 }
-.about-us{
+
+.about-us {
   padding-top: 10%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.inside-text{
+
+.inside-text {
   font-size: var(--text-size);;
   color: white;
 }
-.nft-holder{
+
+.nft-holder {
   display: flex;
   padding-left: 20%;
   align-items: center;
@@ -228,88 +226,109 @@ body{
   align-content: center;
   flex-direction: column;
 }
-.nft{
+
+.nft {
   width: 250px;
   height: 250px;
-  background-size: contain;
-  background-image: url("https://wersm.com/wp-content/uploads/2021/08/wersm-cryptopunk-feat.jpg");
-  background-repeat: no-repeat;
+  image-rendering: pixelated;
 }
-.link{
+
+.link {
   color: white;
   text-decoration: none;
 }
-.rarity-card{
+
+.rarity-card {
   background-color: var(--secondary-color);
 }
-@media (max-width:1100px) {
-  .rarity-grid{
+
+@media (max-width: 1100px) {
+  .rarity-grid {
     grid-template-columns: 49% 49% !important;
   }
-  .rarity-text{
+
+  .rarity-text {
     font-size: 2.3vw !important;
   }
-  .rarity{
+
+  .rarity {
     font-size: 1.4vw !important;
   }
-  .rarity-header{
+
+  .rarity-header {
     font-size: 2.5vw !important;
   }
 }
-.rarity-grid{
+
+.rarity-grid {
   display: grid;
   grid-template-columns: 32% 32% 32%;
   grid-column-gap: 10px;
 }
-.rarity-header{
+
+.rarity-header {
   color: white;
   padding: 5%;
   font-size: 18px;
 }
-.rarity-text{
+
+.rarity-text {
   color: white;
   padding: 5%;
   font-size: 15px;
 }
-.rarity-field{
+
+.rarity-field {
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
-.rarity{
+
+.rarity {
   color: white;
   padding: 5%;
   font-size: inherit;
   text-align: center;
-}.creator-logo{
-   height: 150px;
-   width: 150px;
- }
-.creator-name{
+}
+
+.creator-logo {
+  height: 150px;
+  width: 150px;
+  image-rendering: pixelated;
+}
+
+.creator-name {
   color: white;
   font-size: 25px;
 }
-.creator-info{
+
+.creator-info {
   text-align: center;
 }
-.creator-grid{
+
+.creator-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.pos-text{
+
+.pos-text {
   color: white;
   font-size: 14px;
 }
-.faq{
+
+.faq {
   padding-top: 80px;
 }
-.faq-tab{
+
+.faq-tab {
   background-color: var(--secondary-color) !important;
 }
-.ant-collapse-content{
+
+.ant-collapse-content {
   background-color: var(--secondary-color);
 }
-.vertical-line{
+
+.vertical-line {
   width: 100%;
   height: 5px;
   background-color: var(--secondary-color);

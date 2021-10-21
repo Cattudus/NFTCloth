@@ -1,22 +1,21 @@
 
 interface worker{
   name: string,
-  image: string,
   position: string,
   about: string
 }
-export const workers: worker[] = [{about: 'Hard Worker?', image: '4.png',name:'Cattudus', position: 'Web Developer' }, {about: 'New mac', image: '3.png',name:'Vasa Pasa', position: 'Web Developer - Artist' }, {about: 'Shit coins', image: '3.png',name:'Anuon', position: 'Backend Developer' }, {about: 'Lets have chas', image: '3.png',name:'Gouda', position: 'Marketing - Socials' }]
+export const workers: worker[] = [{about: 'Hard Worker?',name:'Phantom Jedi', position: 'Web Developer' }, {about: 'New mac',name:'Vasa Pasa', position: 'Web Developer - Artist' }, {about: 'Shit coins',name:'Anuon', position: 'Backend Developer' }, {about: 'Lets have chas',name:'Gouda', position: 'Marketing - Socials' }]
 
 
 export function Creators(){
     return(
-        <div>
+        <div id="Creators">
             <div className="text-header" style={{paddingTop: '30px', paddingBottom: '20px'}}>
                 Our Creators
             </div>
             <div className="creator-grid">
                 <div className="creator-info">
-                    <img src="https://lh3.googleusercontent.com/s-z_TCeIbnTcbm-NN3_YXrdMgTux7uHpsxDNu-BF5Y8tYjajGh2cwiMJcVXVSQjFcmWqJGtF5sAdS7-cnfQGVsbyEjENFR3s0lLjVg=w600" className="creator-logo" alt=""/>
+                    <img src="/NFTs/1.png" className="creator-logo" alt=""/>
                     <div className="creator-name">{workers[0].name}</div>
                     <div className="pos-text">{workers[0].position}</div>
                     <div className="inside-text">{workers[0].about}</div>

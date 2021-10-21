@@ -1,6 +1,59 @@
 .App-Bar {
   padding: 0px;
   justify-content: space-between !important;
+
+}
+@media (max-width: 800px) {
+.big-nav{
+  display: none !important;
+}
+}
+
+@media (min-width: 801px) {
+  .small-nav{
+    display: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a{
+  color: white !important;
+}
+.socials{
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+}
+.app-navigation{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+.single-app-bar {
+  background-color: var(--main-color);
+  border: #0a0910 2px solid;
+  box-shadow: 0px 5px 24px -6px rgba(0,0,0,0.27);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.flex-item{
+  padding-left: 10px ;
+  padding-right: 10px;
+}
+.horizontal-line{
+  width: 3px;
+  height: 50px;
+  background-color: var(--secondary-color);
+}
+.bar-nft {
+  image-rendering: pixelated;
+  height: 40px;
+  width: 40px;
 }
 
 .app-bar-box {
@@ -54,14 +107,17 @@
   justify-content: center;
   position: relative;
   height: auto;
+
   .app-bar-item {
     cursor: pointer;
     padding: 0 30px;
     color: @tungsten-60;
     font-size: 18px;
+
     a {
       color: inherit;
     }
+
     &.active {
       color: white;
     }

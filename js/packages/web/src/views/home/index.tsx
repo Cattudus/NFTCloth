@@ -13,25 +13,33 @@ export const HomeView = () => {
   // const doc = document.querySelectorAll(".ant-layout")
   // console.log( doc[0] )
   // doc[0].attributes[1].value =''
-  const { isLoading, store } = useMeta();
-  const { isConfigured } = useStore();
-
-  const showAuctions = (store && isConfigured) || isLoading;
-
-  return (
-    <div>
-      {showAuctions ?  <div >
-        <AboutUs/>
-        <WhyUs/>
-        <Rarity/>
-        <RoadMap/>
-        <Creators/>
-        <FAQ/>
-        <Footer/>
-      </div> : <SetupView />}
-      </div>
+  // const { isLoading, store } = useMeta();
+  // const { isConfigured } = useStore();
+  //
+  // const showAuctions = (store && isConfigured) || isLoading;
+  //
+  // return (
+  //   <div>
+  //     {showAuctions ? <MainView/> : <SetupView />}
+  //     </div>
+  // );
+  return(
+    <MainView/>
   );
 };
+export const MainView = () => {
+  return(
+    <div >
+      <AboutUs/>
+      <WhyUs/>
+      {/*<Rarity/>*/}
+      <RoadMap/>
+      <Creators/>
+      <FAQ/>
+      <Footer/>
+    </div>
+  );
+}
 
 export const Footer: FC = () =>{
   return(
