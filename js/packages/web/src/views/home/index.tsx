@@ -11,11 +11,6 @@ import {RoadMap} from "../../components/RoadMap/RoadMap";
 import {ClothingCarousel} from "../../components/ClothingCarousel";
 
 export const HomeView = () => {
-  //Remove metaplex title
-  const doc = document.querySelector(".ant-layout")
-  if(doc){
-  console.log( doc.setAttribute('title',''))
-  }
   // const { isLoading, store } = useMeta();
   // const { isConfigured } = useStore();
   //
