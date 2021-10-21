@@ -1,3 +1,5 @@
+import {CheckCircleFilled, CloseSquareFilled} from "@ant-design/icons";
+
 export const RoadMap = () => {
   return(
     <div id="RoadMap">
@@ -9,8 +11,12 @@ export const RoadMap = () => {
 
           <div className="cd-timeline-content">
             <h2>October</h2>
-            <p>Working alongside the designer team implementing the designs, also developing custom solutions to address
-              team necessities.</p>
+            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Create spooky-spooks</p>
+            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Launch Spooky-Spooks website</p>
+            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Create socials</p>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} />Get first clothes</p>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} />Launch cloth shop section</p>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} />Launch my profile section</p>
           </div>
         </div>
 
@@ -19,10 +25,10 @@ export const RoadMap = () => {
           </div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic
-              quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-            <span className="cd-date">November</span>
+            <h2>November</h2>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} /> Discord Giveaways!</p>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} /> Initial spooky-spooks setup</p>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} /> Get verified on marketplaces</p>
           </div>
         </div>
 
@@ -31,39 +37,11 @@ export const RoadMap = () => {
           </div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias
-              eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem
-              doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus
-              ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi
-              repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt
-              similique aut adipisci.</p>
-            <span className="cd-date">December</span>
+            <h2>December</h2>
+            <p> Co dál hm?</p>
           </div>
         </div>
 
-        <div className="cd-timeline-block">
-          <div className="cd-timeline-img cd-location">
-          </div>
-
-          <div className="cd-timeline-content">
-            <h2>Title of section 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic
-              quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-            <span className="cd-date">January</span>
-          </div>
-        </div>
-
-        <div className="cd-timeline-block">
-          <div className="cd-timeline-img cd-location">
-          </div>
-
-          <div className="cd-timeline-content">
-            <h2>Title of section 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-            <span className="cd-date">Feb</span>
-          </div>
-        </div>
 
       </section>
     </div>
