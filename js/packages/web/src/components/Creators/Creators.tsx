@@ -15,25 +15,25 @@ export function Creators(){
             </div>
             <div className="creator-grid">
                 <div className="creator-info">
-                    <img src="/NFTs/1.png" className="creator-logo" alt=""/>
+                    <img src="/NFTs/4.png" className="creator-logo" alt=""/>
                     <div className="creator-name">{workers[0].name}</div>
                     <div className="pos-text">{workers[0].position}</div>
                     <div className="inside-text">{workers[0].about}</div>
                 </div>
                 <div className="creator-info">
-                    <img src="https://lh3.googleusercontent.com/s-z_TCeIbnTcbm-NN3_YXrdMgTux7uHpsxDNu-BF5Y8tYjajGh2cwiMJcVXVSQjFcmWqJGtF5sAdS7-cnfQGVsbyEjENFR3s0lLjVg=w600" className="creator-logo" alt=""/>
+                    <img src="/NFTs/3.png" className="creator-logo" alt=""/>
                     <div className="creator-name">{workers[1].name}</div>
                     <div className="pos-text">{workers[1].position}</div>
                     <div className="inside-text">{workers[1].about}</div>
                 </div>
                 <div className="creator-info">
-                    <img src="https://lh3.googleusercontent.com/s-z_TCeIbnTcbm-NN3_YXrdMgTux7uHpsxDNu-BF5Y8tYjajGh2cwiMJcVXVSQjFcmWqJGtF5sAdS7-cnfQGVsbyEjENFR3s0lLjVg=w600" className="creator-logo" alt=""/>
+                    <img src="/NFTs/2.png" className="creator-logo" alt=""/>
                     <div className="creator-name">{workers[2].name}</div>
                     <div className="pos-text">{workers[2].position}</div>
                     <div className="inside-text">{workers[2].about}</div>
                 </div>
                 <div className="creator-info">
-                    <img src="https://lh3.googleusercontent.com/s-z_TCeIbnTcbm-NN3_YXrdMgTux7uHpsxDNu-BF5Y8tYjajGh2cwiMJcVXVSQjFcmWqJGtF5sAdS7-cnfQGVsbyEjENFR3s0lLjVg=w600" className="creator-logo" alt=""/>
+                    <img src="/NFTs/6.png" className="creator-logo" alt=""/>
                     <div className="creator-name">{workers[3].name}</div>
                     <div className="pos-text">{workers[3].position}</div>
                     <div className="inside-text">{workers[3].about}</div>

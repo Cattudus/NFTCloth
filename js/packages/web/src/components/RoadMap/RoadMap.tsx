@@ -38,7 +38,7 @@ export const RoadMap = () => {
 
           <div className="cd-timeline-content">
             <h2>December</h2>
-            <p> Co dál hm?</p>
+            <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} /> Make own coin</p>
           </div>
         </div>
 
