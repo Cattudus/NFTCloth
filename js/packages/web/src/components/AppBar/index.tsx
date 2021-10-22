@@ -5,7 +5,7 @@ import { ConnectButton, CurrentUserBadge } from '@oyster/common';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Notifications } from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
-import {MenuOutlined, TwitterOutlined} from '@ant-design/icons';
+import {InstagramOutlined, MenuOutlined, TwitterOutlined} from '@ant-design/icons';
 import { useMeta } from '../../contexts';
 
 // For one single page
@@ -73,10 +73,19 @@ export const AppBar=() => {
 
         <div className="socials">
           <div className="flex-item">
+            <a href="https://twitter.com/SolSpookySpooks" target="_blank" rel="noopener noreferrer">
             <TwitterOutlined style={{fontSize: '25px'}} />
+            </a>
           </div>
           <div className="flex-item">
+            <a href="https://discord.gg/npsNdxZQne" target="_blank" rel="noopener noreferrer">
             <i style={{fontSize: '25px'}} className="fab fa-discord"/>
+            </a>
+          </div>
+          <div className="flex-item">
+            <a href="https://www.instagram.com/spookyspooksnft/" target="_blank" rel="noopener noreferrer">
+              <InstagramOutlined style={{fontSize: '25px'}} />
+            </a>
           </div>
         </div>
       </div>
