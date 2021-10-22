@@ -25,6 +25,22 @@ export function WhyUs() {
 }
 
 export const NFT = () =>{
+  let x = 0
+  const images = [
+    '/NFTs/1.png', '/NFTs/2.png', '/NFTs/3.png', '/NFTs/4.png', '/NFTs/5.png', '/NFTs/6.png'
+]
+
+  setInterval(displayNextImage, 650);
+  function displayNextImage() {
+     if(x > 5){
+       x = 0
+     }
+     if(document.querySelector('.nft')) {
+       // @ts-ignore
+       document.querySelector('.nft').setAttribute('src', images[x]);
+     }
+     x++;
+  }
   return(
       <img src='/NFTs/1.png' className="nft" alt=""/>
   );
