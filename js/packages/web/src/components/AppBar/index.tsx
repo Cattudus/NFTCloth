@@ -40,10 +40,10 @@ export const AppBar=() => {
     <LayoutContent>
       <div className="single-app-bar">
         <div className="app-navigation small-nav">
-          <div style={{paddingRight:"15px", paddingLeft: "8px"}}>
+          <div style={{paddingRight:"15px", paddingLeft: "8px"}} className="bar-nft">
             <img src="/NFTs/1.png" className="bar-nft" alt="" />
           </div>
-          <div>Spooky Spooks</div>
+          <div>The Spectral Club</div>
           <div className="flex-item">
             <div className="horizontal-line"/>
           </div>
@@ -58,7 +58,7 @@ export const AppBar=() => {
          <div style={{paddingRight:"15px", paddingLeft: "8px"}}>
            <img src="/NFTs/1.png" className="bar-nft" alt="" />
          </div>
-         <div>Spooky Spooks</div>
+         <div>The Spectral Club</div>
          <div className="flex-item">
            <div className="horizontal-line"/>
          </div>
@@ -75,7 +75,7 @@ export const AppBar=() => {
 
         <div className="socials">
           <div className="flex-item">
-            <a href="https://twitter.com/SolSpookySpooks" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/TheSpectralClub" target="_blank" rel="noopener noreferrer">
             <TwitterOutlined style={{fontSize: '25px'}} />
             </a>
           </div>

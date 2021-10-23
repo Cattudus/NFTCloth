@@ -12,10 +12,10 @@ export const HauntedVillage = () => {
           to farm our coin.
         </div>
         <div className="inside-text" style={{paddingTop: '10px'}}> For that coin you will be able to buy our clothes in
-          shop with your spooks in village on it.
+          shop with your spectrals in village on it.
         </div>
         <div className="inside-text" style={{paddingTop: '10px'}}>
-          Your SPOOKS will determine your APY based on rarity, each user Village can obtain max 3 SPOOKS. Only one
+          Your SPECTRALS will determine your APY based on rarity, each user Village can obtain max 3 SPECTRALS. Only one
           village for one wallet. If you buy our clothes 50% of the coins will be burned.
         </div>
       </LayoutContent>

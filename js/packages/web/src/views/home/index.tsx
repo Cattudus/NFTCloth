@@ -49,7 +49,7 @@ export const Footer: FC = () => {
         <div style={{paddingTop: '100px', paddingBottom: '20px'}}>
           <div className='vertical-line'/>
         </div>
-        <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the Spooky Spooks Team
+        <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the The Spectral Club Team
           👻
         </div>
       </div>

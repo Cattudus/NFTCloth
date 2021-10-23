@@ -28,7 +28,7 @@ export default class MetaplexDocument extends Document {
             href="/NFTs/1.png"
           />
           <meta name="theme-color" content="#000000" />
-          <meta name="description" content="Spooky Spooks" />
+          <meta name="description" content="The Spectral Club" />
           <link rel="manifest" href="/manifest.json" />
           <link
             rel="stylesheet"

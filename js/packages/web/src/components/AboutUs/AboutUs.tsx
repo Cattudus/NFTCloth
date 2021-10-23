@@ -2,7 +2,7 @@ import React, {FC, useState} from "react";
 import {LayoutContent} from "../Layout";
 import {Layout} from "antd";
 
-export const aboutUs: string = "Spooky Spooks is a collection of 3333 Spooky NFT Ghosts. Every Spook is algorithmically generated and completely unique. "
+export const aboutUs: string = "The Spectral Club is a collection of 3333 Spectral NFT Ghosts. Every Spectral is algorithmically generated and completely unique. "
 export const aboutUs2: string = "But we don't offer to you just NFTs, with our NFT you can have a special CLOTHES that you can obtain by drops."
 
 export function WhyUs() {
@@ -59,7 +59,7 @@ export const AboutUs: FC = () => {
     <div>
       <div className="about-us">
         <div>
-          <div className="text-header">👻 The spookiest Spooks on SOLANA 👻</div>
+          <div className="text-header">👻 The Spectral Club on SOLANA 👻</div>
           <p className="inside-text">{aboutUs}</p>
           <div style={{paddingTop: '10px'}}>
             <p className="inside-text">{aboutUs2}</p>
@@ -74,7 +74,7 @@ export const AboutUs: FC = () => {
           <span style={{paddingLeft: '5px', paddingRight: '5px'}}>
             <img src="/favicon-96x96.png" style={{height: '30px', width: '30px',marginTop: '-5px'}}/>
           </span>
-          = 1 SPOOKY SPOOK 👻
+          = 1 Spectral 👻
         </p>
       </div>
     </div>

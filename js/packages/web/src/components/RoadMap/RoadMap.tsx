@@ -14,8 +14,8 @@ export const RoadMap = () => {
 
           <div className="cd-timeline-content">
             <h2>October</h2>
-            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Create spooky-spooks</p>
-            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Launch Spooky-Spooks website</p>
+            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Create The Spectral Club</p>
+            <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Launch The Spectral Club website</p>
             <p> <CheckCircleFilled style={{color: "green", paddingRight: '10px'}} />Create socials</p>
             <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} />Get first clothes</p>
             <p>   <CloseSquareFilled style={{color: "red", paddingRight: '10px'}} />Launch my profile section</p>
