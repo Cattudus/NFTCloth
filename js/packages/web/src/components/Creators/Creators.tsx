@@ -6,7 +6,7 @@ interface worker{
   position: string,
   about: string
 }
-export const workers: worker[] = [{about: 'Hard Worker?',name:'Phantom Jedi', position: 'Web Developer' }, {about: 'New mac',name:'Spectral Poltergeist', position: 'Artist/ UI|UX' }, {about: 'Loves shit coins',name:'Spectral phantom', position: 'Backend Developer' }, {about: 'Lets have cheese',name:'Gouda', position: 'Marketing - Socials' }]
+export const workers: worker[] = [{about: 'Webs are life',name:'Spectral Jedi', position: 'Web Developer' }, {about: 'UI makes web',name:'Spectral Poltergeist', position: 'Artist / UI|UX' }, {about: 'Loves shit coins',name:'Spectral phantom', position: 'Backend Developer' }, {about: 'Spectral Club!',name:'Haunted Spectral', position: 'Marketing - Socials' }]
 
 
 export function Creators(){

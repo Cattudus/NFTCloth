@@ -31,7 +31,7 @@ export function WhyUs() {
 export const NFT = () =>{
   let x = 0
   const images = [
-    '/NFTs/1.png', '/NFTs/2.png', '/NFTs/3.png', '/NFTs/4.png', '/NFTs/5.png', '/NFTs/6.png'
+    '/NFTs/1.png', '/NFTs/2.png', '/NFTs/3.png', '/NFTs/4.png', '/NFTs/5.png', '/NFTs/6.png', '/NFTs/7.png', '/NFTs/8.png', '/NFTs/9.png', '/NFTs/10.png', '/NFTs/11.png'
 ]
 
   setInterval(displayNextImage, 650);
