@@ -1,10 +1,13 @@
 import React, {FC, useState} from "react";
+import {LayoutContent} from "../Layout";
+import {Layout} from "antd";
 
 export const aboutUs: string = "Spooky Spooks is a collection of 3333 Spooky NFT Ghosts. Every Spook is algorithmically generated and completely unique. "
 export const aboutUs2: string = "But we don't offer to you just NFTs, with our NFT you can have a special CLOTHES that you can obtain by drops."
 
 export function WhyUs() {
   return (
+    <LayoutContent>
     <div style={{paddingTop: '10%'}}>
       <div className="text-header"> NFT CLOTH DROPS?</div>
       <p className="inside-text">Our CLOTH DROPS are something special.</p>
@@ -21,6 +24,7 @@ export function WhyUs() {
         <p className="inside-text">You can get a FREE drop or PAID drop </p>
       </div>
     </div>
+    </LayoutContent>
   );
 }
 
@@ -50,6 +54,7 @@ export const AboutUs: FC = () => {
   const [picture, setPicture] = useState(1);
   const [nft, setNft] = useState('/NFTs/' + picture + '.png')
   return (
+    <LayoutContent>
     <div>
       <div className="about-us">
         <div>
@@ -64,7 +69,7 @@ export const AboutUs: FC = () => {
         </div>
       </div>
       <div style={{paddingTop: '10px'}}>
-        <p className="text-header">1 SOL
+        <p className="text-header">0.5 SOL
           <span style={{paddingLeft: '5px', paddingRight: '5px'}}>
             <img src="/favicon-96x96.png" style={{height: '30px', width: '30px',marginTop: '-5px'}}/>
           </span>
@@ -72,5 +77,6 @@ export const AboutUs: FC = () => {
         </p>
       </div>
     </div>
+    </LayoutContent>
   );
 }

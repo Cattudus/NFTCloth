@@ -1,4 +1,3 @@
-
 import React, {FC} from 'react';
 import {AboutUs, WhyUs} from "../../components/AboutUs/AboutUs";
 import {Rarity} from "../../components/Rarity/Rarity";
@@ -9,6 +8,8 @@ import {AuctionListView} from "./auctionList";
 import {SetupView} from "./setup";
 import {RoadMap} from "../../components/RoadMap/RoadMap";
 import {ClothingCarousel} from "../../components/ClothingCarousel";
+import {LayoutContent} from "../../components/Layout";
+import {HauntedVillage} from "../../components/HauntedVillage";
 
 export const HomeView = () => {
   // const { isLoading, store } = useMeta();
@@ -21,32 +22,37 @@ export const HomeView = () => {
   //     {showAuctions ? <MainView/> : <SetupView />}
   //     </div>
   // );
-  return(
+  return (
     <MainView/>
   );
 };
 export const MainView = () => {
-  return(
-    <div >
+  return (
+    <div>
       <AboutUs/>
       <WhyUs/>
       <ClothingCarousel/>
       {/*<Rarity/>*/}
       <RoadMap/>
       <Creators/>
+      <HauntedVillage/>
       <FAQ/>
       <Footer/>
     </div>
   );
 }
 
-export const Footer: FC = () =>{
-  return(
-    <div>
-      <div style={{paddingTop: '100px', paddingBottom: '20px'}}>
-        <div className='vertical-line'/>
+export const Footer: FC = () => {
+  return (
+    <LayoutContent>
+      <div>
+        <div style={{paddingTop: '100px', paddingBottom: '20px'}}>
+          <div className='vertical-line'/>
+        </div>
+        <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the Spooky Spooks Team
+          👻
+        </div>
       </div>
-      <div className="inside-text" style={{textAlign: "center", paddingBottom: '25px'}}>❤️From the Spooky Spooks Team 👻 </div>
-    </div>
+    </LayoutContent>
   );
 }

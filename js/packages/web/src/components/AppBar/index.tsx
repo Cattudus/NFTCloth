@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Dropdown, Menu } from 'antd';
+import {Button, Dropdown, Layout, Menu} from 'antd';
 import { ConnectButton, CurrentUserBadge } from '@oyster/common';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Notifications } from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
 import {InstagramOutlined, MenuOutlined, TwitterOutlined} from '@ant-design/icons';
 import { useMeta } from '../../contexts';
+import {LayoutContent} from "../Layout";
 
 // For one single page
 export const SmallBar= () =>{
@@ -36,9 +37,10 @@ export const SmallBar= () =>{
 
 export const AppBar=() => {
   return(
+    <LayoutContent>
       <div className="single-app-bar">
         <div className="app-navigation small-nav">
-          <div style={{paddingRight:"15px"}}>
+          <div style={{paddingRight:"15px", paddingLeft: "8px"}}>
             <img src="/NFTs/1.png" className="bar-nft" alt="" />
           </div>
           <div>Spooky Spooks</div>
@@ -53,7 +55,7 @@ export const AppBar=() => {
 
 
        <div className="app-navigation big-nav">
-         <div style={{paddingRight:"15px"}}>
+         <div style={{paddingRight:"15px", paddingLeft: "8px"}}>
            <img src="/NFTs/1.png" className="bar-nft" alt="" />
          </div>
          <div>Spooky Spooks</div>
@@ -89,6 +91,7 @@ export const AppBar=() => {
           </div>
         </div>
       </div>
+    </LayoutContent>
   );
 }
 

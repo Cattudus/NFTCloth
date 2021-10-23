@@ -1,3 +1,5 @@
+import {LayoutContent} from "../Layout";
+import React from "react";
 
 interface worker{
   name: string,
@@ -9,6 +11,8 @@ export const workers: worker[] = [{about: 'Hard Worker?',name:'Phantom Jedi', po
 
 export function Creators(){
     return(
+      <div style={{paddingBottom: '30px'}}>
+      <LayoutContent>
         <div id="Creators">
             <div className="text-header" style={{paddingTop: '30px', paddingBottom: '20px'}}>
                 Our Creators
@@ -40,5 +44,7 @@ export function Creators(){
                 </div>
             </div>
         </div>
+      </LayoutContent>
+      </div>
     );
 }

@@ -12,16 +12,24 @@ const paddingForLayout = (width: number) => {
   if (width > 768) return '10px 30px';
 };
 
+export const LayoutContent = React.memo((props: any) => {
+  const { width } = useWindowDimensions();
+  return(
+  <Layout style={{
+    padding: paddingForLayout(width),
+    maxWidth: 1000,
+  }}>
+    {props.children}
+  </Layout>
+  );
+});
+
 export const AppLayout = React.memo((props: any) => {
   const { width } = useWindowDimensions();
 
   return (
     <>
       <Layout
-        style={{
-          padding: paddingForLayout(width),
-          maxWidth: 1000,
-        }}
       >
         <Header className="App-Bar">
           <AppBar />
