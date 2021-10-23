@@ -85,7 +85,7 @@ export const AppBar=() => {
             </a>
           </div>
           <div className="flex-item">
-            <a href="https://www.instagram.com/spookyspooksnft/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/thespectralclub/" target="_blank" rel="noopener noreferrer">
               <InstagramOutlined style={{fontSize: '25px'}} />
             </a>
           </div>

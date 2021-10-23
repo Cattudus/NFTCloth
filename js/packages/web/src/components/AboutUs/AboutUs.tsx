@@ -36,7 +36,7 @@ export const NFT = () =>{
 
   setInterval(displayNextImage, 650);
   function displayNextImage() {
-     if(x > 5){
+     if(x > 10){
        x = 0
      }
      if(document.querySelector('.nft')) {
