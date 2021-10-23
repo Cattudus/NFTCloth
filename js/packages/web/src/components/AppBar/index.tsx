@@ -40,7 +40,7 @@ export const AppBar=() => {
     <LayoutContent>
       <div className="single-app-bar">
         <div className="app-navigation small-nav">
-          <div style={{paddingRight:"15px", paddingLeft: "8px"}} className="bar-nft">
+          <div style={{paddingRight:"15px", paddingLeft: "8px"}} className="nft-div">
             <img src="/NFTs/1.png" className="bar-nft" alt="" />
           </div>
           <div>The Spectral Club</div>
