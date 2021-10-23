@@ -9,7 +9,6 @@ const { Header, Content } = Layout;
 
 const paddingForLayout = (width: number) => {
   if (width <= 768) return '5px 10px';
-  if (width > 768) return '10px 30px';
 };
 
 export const LayoutContent = React.memo((props: any) => {

@@ -54,6 +54,7 @@ export const AboutUs: FC = () => {
   const [picture, setPicture] = useState(1);
   const [nft, setNft] = useState('/NFTs/' + picture + '.png')
   return (
+    <div style={{paddingTop: '50px'}}>
     <LayoutContent>
     <div>
       <div className="about-us">
@@ -78,5 +79,6 @@ export const AboutUs: FC = () => {
       </div>
     </div>
     </LayoutContent>
+    </div>
   );
 }
