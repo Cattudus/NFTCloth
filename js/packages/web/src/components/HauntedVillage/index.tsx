@@ -1,24 +1,44 @@
-import {LayoutContent} from "../Layout";
-
+import { LayoutContent } from '../Layout';
 
 export const HauntedVillage = () => {
   return (
-    <div style={{backgroundColor: '#0a0a0a', paddingBottom: '20px', paddingTop: '10px'}}>
+    <div
+      style={{
+        backgroundColor: '#313037',
+        paddingBottom: '20px',
+        paddingTop: '10px',
+      }}
+    >
       <LayoutContent>
-        <div className="text-header">
-          Haunted Village
+        <div className="text-header">HAUNTED VILLAGE</div>
+        <div className="inside-text" style={{ paddingTop: '10px' }}>
+          {' '}
+          Do you want to scare some villagers? You have a unique opportunity
+          with our Haunted Village.
         </div>
-        <div className="inside-text" style={{paddingTop: '10px'}}> Haunted Village will be farm where you will be able
-          to farm our coin.
+        <div className="inside-text" style={{ paddingTop: '10px' }}>
+          Everyone has it's own village with inhabitants and ability to put up
+          to 3 Specters in to this village to scare them. In this haunted time
+          you will earn our COIN.
         </div>
-        <div className="inside-text" style={{paddingTop: '10px'}}> For that coin you will be able to buy our clothes in
-          shop with your spectrals in village on it.
+        <div className="inside-text" style={{ paddingTop: '10px' }}>
+          Your SPECTER will determine your APY based on rarity - the more rare
+          your Specter is = the more coin it will generate. Also keep in mind
+          that you can't scare inhabitants all day long, your Specters needs
+          some rest.
         </div>
-        <div className="inside-text" style={{paddingTop: '10px'}}>
-          Your SPECTRALS will determine your APY based on rarity, each user Village can obtain max 3 SPECTRALS. Only one
-          village for one wallet. If you buy our clothes 50% of the coins will be burned.
+        <div className="inside-text" style={{ paddingTop: '10px' }}>
+          If you scared a decent amount of inhabitants - you can spend your
+          coins in our special SHOP.
+        </div>
+        <div>
+          <img
+            style={{ height: '400px', width: '100%', objectFit: 'cover' }}
+            alt="example"
+            src="/img/spectralTest.svg"
+          />
         </div>
       </LayoutContent>
     </div>
   );
-}
+};
