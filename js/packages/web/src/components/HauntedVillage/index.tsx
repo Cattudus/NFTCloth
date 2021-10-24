@@ -33,7 +33,7 @@ export const HauntedVillage = () => {
         </div>
         <div>
           <img
-            style={{ height: '400px', width: '100%', objectFit: 'cover' }}
+            className="haunted-image"
             alt="example"
             src="/img/spectralTest.svg"
           />
