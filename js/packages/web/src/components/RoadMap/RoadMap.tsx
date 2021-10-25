@@ -70,7 +70,7 @@ export const RoadMap = () => {
                 <CloseSquareFilled
                   style={{ color: 'red', paddingRight: '10px' }}
                 />{' '}
-                Start Mint
+                Start Mint 24.11. 20:00 CET
               </p>
               <p>
                 {' '}
