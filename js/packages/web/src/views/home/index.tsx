@@ -11,6 +11,7 @@ import { ClothingCarousel } from '../../components/ClothingCarousel';
 import { LayoutContent } from '../../components/Layout';
 import { HauntedVillage } from '../../components/HauntedVillage';
 import { SpectralShopSection } from '../../components/SpectralShopSection';
+import { LandmarksSection } from '../../components/LandmarksSection';
 
 export const HomeView = () => {
   // const { isLoading, store } = useMeta();
@@ -35,6 +36,7 @@ export const MainView = () => {
       <HauntedVillage />
       <SpectralShopSection />
       <RoadMap />
+      <LandmarksSection />
       <Creators />
       <FAQ />
       <Footer />
