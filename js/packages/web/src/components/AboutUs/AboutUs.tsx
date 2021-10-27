@@ -76,7 +76,9 @@ export const AboutUs: FC = () => {
         <div>
           <div className="about-us">
             <div>
-              <Animation text="The spectral club"/>
+              <div className="text-header">
+                👻 The Spectral Club on SOLANA 👻
+              </div>
               <p className="inside-text">{aboutUs}</p>
               <div style={{ paddingTop: '10px' }}>
                 <p className="inside-text">{aboutUs2}</p>
