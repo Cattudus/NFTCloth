@@ -1,31 +1,40 @@
 import { LayoutContent } from '../Layout';
 import { Card, List } from 'antd';
+import useWindowDimensions from "../../utils/layout";
 
 export const LandmarksSection = () => {
+  const { width } = useWindowDimensions();
+  function setColumns(){
+    if (width <= 800){
+    return 2;
+    } else {
+    return 4
+    }
+  }
   const data = [
     {
       title: '25%',
       content: 'Airdrop 5 Specters',
-      content2: 'Free drop of 50 hoodies',
-      content3: '1% sales donation to community picked charity',
+      content2: 'Free drop of 50 hoodies and 150 paid hoodies',
+      content3: '0.5% of royalties will go to community picked charity',
     },
     {
       title: '50%',
       content: 'Airdrop 10 Specters',
-      content2: 'Free drop of 100 hoodies',
-      content3: '2% sales donation to community picked charity',
+      content2: 'Free drop of 65 hoodies and 200 paid hoodies',
+      content3: '0.5% of royalties will go to community picked charity',
     },
     {
       title: '75%',
       content: 'Airdrop 15 Specters',
-      content2: 'Free drop of 150 hoodies',
-      content3: '3% sales donation to community picked charity',
+      content2: 'Free drop of 85 hoodies and 250 paid hoodies',
+      content3: '1% of royalties will go to community picked charity',
     },
     {
       title: '100%',
       content: 'Airdrop 20 Specters',
-      content2: 'Free drop of 250 hoodies',
-      content3: '5% sales donation to community picked charity',
+      content2: 'Free drop of 100 hoodies and 300 paid hoodies',
+      content3: '1% of royalties will go to community picked charity',
     },
   ];
   return (
@@ -46,7 +55,7 @@ export const LandmarksSection = () => {
           percentage, our goal will be clear.
         </div>
         <List
-          grid={{ gutter: 16, column: 4 }}
+          grid={{ gutter: 16, column: setColumns() }}
           dataSource={data}
           renderItem={item => (
             <List.Item>
