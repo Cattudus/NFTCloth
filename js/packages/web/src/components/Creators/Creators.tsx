@@ -22,25 +22,21 @@ export function Creators(){
                     <img src="/NFTs/4.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[0].name}</div>
                     <div className="pos-text">{workers[0].position}</div>
-                    <div className="pos-text">{workers[0].about}</div>
                 </div>
                 <div className="creator-info">
                     <img src="/NFTs/3.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[1].name}</div>
                     <div className="pos-text">{workers[1].position}</div>
-                    <div className="pos-textt">{workers[1].about}</div>
                 </div>
                 <div className="creator-info">
                     <img src="/NFTs/2.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[2].name}</div>
                     <div className="pos-text">{workers[2].position}</div>
-                    <div className="pos-text">{workers[2].about}</div>
                 </div>
                 <div className="creator-info">
                     <img src="/NFTs/6.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[3].name}</div>
                     <div className="pos-text">{workers[3].position}</div>
-                    <div className="pos-text">{workers[3].about}</div>
                 </div>
             </div>
         </div>
