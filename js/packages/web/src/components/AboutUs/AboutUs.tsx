@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import { LayoutContent } from '../Layout';
 import { Layout } from 'antd';
+import {Animation} from "../Animations";
 
 export const aboutUs: string =
   'The Spectral Club is a collection of 3333 Spectral NFT Ghosts. Every Spectral is algorithmically generated and completely unique. ';
@@ -70,14 +71,12 @@ export const AboutUs: FC = () => {
   const [picture, setPicture] = useState(1);
   const [nft, setNft] = useState('/NFTs/' + picture + '.png');
   return (
-    <div style={{ paddingTop: '50px' }}>
+    <div style={{ paddingTop: '80px' }}>
       <LayoutContent>
         <div>
           <div className="about-us">
             <div>
-              <div className="text-header">
-                👻 The Spectral Club on SOLANA 👻
-              </div>
+              <Animation text="The spectral club"/>
               <p className="inside-text">{aboutUs}</p>
               <div style={{ paddingTop: '10px' }}>
                 <p className="inside-text">{aboutUs2}</p>
