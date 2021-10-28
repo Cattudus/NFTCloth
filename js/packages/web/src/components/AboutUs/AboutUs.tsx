@@ -1,10 +1,10 @@
 import React, { FC, useState } from 'react';
 import { LayoutContent } from '../Layout';
 import { Layout } from 'antd';
-import {Animation} from "../Animations";
+import { Animation } from '../Animations';
 
 export const aboutUs: string =
-  'The Spectral Club is a collection of 3333 Spectral NFT Ghosts. Every Spectral is algorithmically generated and completely unique. ';
+  'The Spectral Club is a collection of 3333 NFT Specters. Every Specter is algorithmically generated and completely unique. ';
 export const aboutUs2: string =
   "But we don't offer you only NFTs - there is a lot more. Our goal is to create a strong community and deliver the most value to its members.";
 
@@ -12,21 +12,20 @@ export function WhyUs() {
   return (
     <LayoutContent>
       <div style={{ paddingTop: '10%' }}>
-        <div className="text-header"> NFT CLOTHES DROPS</div>
+        <div className="text-header"> NFT HOODIE DROPS</div>
         <p className="inside-text">This is something special.</p>
         <div style={{ paddingTop: '10px' }}>
           <p className="inside-text">
             If you are one of our determined NFT holders - you have a chance to
-            drop a special clothing (Hoodie, Shirt, etc.) with your Spectral ON
-            IT!
+            drop a special hoodie with your Specter ON IT!
           </p>
         </div>
         <div style={{ paddingTop: '10px' }}>
           <p className="inside-text">
             Every piece of clothing will be special and limited - you can be
             sure it's unique. The design completely depends on your NFT - so if
-            you are holding Spectral with blue background - you will get blue
-            hoodie with your cool looking Spectral.
+            you are holding Specter with blue background - you will get blue
+            hoodie with your cool looking Specter.
           </p>
         </div>
         <div style={{ paddingTop: '10px' }}>
@@ -95,7 +94,7 @@ export const AboutUs: FC = () => {
                   style={{ height: '30px', width: '30px', marginTop: '-5px' }}
                 />
               </span>
-              = 1 Spectral 👻
+              = 1 Specter 👻
             </p>
           </div>
         </div>
