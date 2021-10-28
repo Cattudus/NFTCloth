@@ -19,12 +19,12 @@ export function Creators(){
             </div>
             <div className="creator-grid">
                 <div className="creator-info">
-                    <img src="/NFTs/4.png" className="creator-logo" alt=""/>
+                    <img src="/SpectralJedi.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[0].name}</div>
                     <div className="pos-text">{workers[0].position}</div>
                 </div>
                 <div className="creator-info">
-                    <img src="/NFTs/3.png" className="creator-logo" alt=""/>
+                    <img src="/SpectralPoltergeist.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[1].name}</div>
                     <div className="pos-text">{workers[1].position}</div>
                 </div>
