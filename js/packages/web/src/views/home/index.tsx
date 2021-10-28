@@ -77,7 +77,7 @@ export const Footer: FC = () => {
           className="inside-text"
           style={{ textAlign: 'center', paddingBottom: '25px' }}
         >
-          ❤️From the The Spectral Club Team 👻
+          👻️ From The Spectral Club Devs 👻
         </div>
       </div>
     </LayoutContent>
