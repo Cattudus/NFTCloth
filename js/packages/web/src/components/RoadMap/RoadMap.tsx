@@ -19,13 +19,13 @@ export const RoadMap = () => {
               className="code-box-shape"
             >
               <div className="cd-timeline-content">
-                <h2>October</h2>
+                <h2>Phase 0</h2>
                 <p>
                   {' '}
                   <CheckCircleFilled
                     style={{color: 'green', paddingRight: '10px'}}
                   />
-                  Create The Spectral Club
+                  Prepare NFTs, website, socials
                 </p>
                 <p>
                   {' '}
@@ -36,24 +36,11 @@ export const RoadMap = () => {
                 </p>
                 <p>
                   {' '}
-                  <CheckCircleFilled
-                    style={{color: 'green', paddingRight: '10px'}}
-                  />
-                  Create socials
-                </p>
-                <p>
-                  {' '}
                   <CloseSquareFilled
                     style={{color: 'red', paddingRight: '10px'}}
                   />
-                  Get first clothes
-                </p>
-                <p>
-                  {' '}
-                  <CloseSquareFilled
-                    style={{color: 'red', paddingRight: '10px'}}
-                  />
-                  Launch my profile section
+                  Start sampling hoodies and find the best quality ones
+                  (Already sampled few but still no good ones)
                 </p>
               </div>
             </Parallax>
@@ -67,7 +54,7 @@ export const RoadMap = () => {
               className="code-box-shape"
             >
               <div className="cd-timeline-content">
-                <h2>November</h2>
+                <h2>Phase 1</h2>
                 <p>
                   {' '}
                   <CloseSquareFilled
@@ -80,7 +67,34 @@ export const RoadMap = () => {
                   <CloseSquareFilled
                     style={{color: 'red', paddingRight: '10px'}}
                   />{' '}
-                  Start Mint 24.11. 20:00 CET
+                  First partnerships - will announce on twitter and discord
+                </p>
+                <p>
+                  {' '}
+                  <CloseSquareFilled
+                    style={{color: 'red', paddingRight: '10px'}}
+                  />{' '}
+                  Pre-verification on third party marketplaces
+                </p>
+              </div>
+            </Parallax>
+          </div>
+
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-movie"></div>
+            <Parallax
+              animation={{x: 0, opacity: 1, playScale: [0.3, 0.7]}}
+              style={{transform: 'translateX(100px)', opacity: 0}}
+              className="code-box-shape"
+            >
+              <div className="cd-timeline-content">
+                <h2>Phase 2 - Minting 24.11 20:00 CET</h2>
+                <p>
+                  {' '}
+                  <CloseSquareFilled
+                    style={{color: 'red', paddingRight: '10px'}}
+                  />{' '}
+                  Start Mint 24.11 20:00 CET
                 </p>
                 <p>
                   {' '}
@@ -94,7 +108,7 @@ export const RoadMap = () => {
                   <CloseSquareFilled
                     style={{color: 'red', paddingRight: '10px'}}
                   />{' '}
-                  Start first drops
+                  Start first hoodie drops
                 </p>
                 <p>
                   {' '}
@@ -102,6 +116,13 @@ export const RoadMap = () => {
                     style={{color: 'red', paddingRight: '10px'}}
                   />{' '}
                   Launch clothes shop section
+                </p>
+                <p>
+                  {' '}
+                  <CloseSquareFilled
+                    style={{color: 'red', paddingRight: '10px'}}
+                  />{' '}
+                  Announce more details about Haunted Village
                 </p>
               </div>
             </Parallax>
@@ -114,23 +135,30 @@ export const RoadMap = () => {
               style={{transform: 'translateX(-100px)', opacity: 0}}
               className="code-box-shape"
             >
-            <div className="cd-timeline-content">
-              <h2>December</h2>
-              <p>
-                {' '}
-                <CloseSquareFilled
-                  style={{color: 'red', paddingRight: '10px'}}
-                />{' '}
-                Launch our own coin
-              </p>
-              <p>
-                {' '}
-                <CloseSquareFilled
-                  style={{color: 'red', paddingRight: '10px'}}
-                />{' '}
-                Launch Haunted Village
-              </p>
-            </div>
+              <div className="cd-timeline-content">
+                <h2>Phase 3</h2>
+                <p>
+                  {' '}
+                  <CloseSquareFilled
+                    style={{color: 'red', paddingRight: '10px'}}
+                  />{' '}
+                  Launch our own coin
+                </p>
+                <p>
+                  {' '}
+                  <CloseSquareFilled
+                    style={{color: 'red', paddingRight: '10px'}}
+                  />{' '}
+                  Launch Haunted Village
+                </p>
+                <p>
+                  {' '}
+                  <CloseSquareFilled
+                    style={{color: 'red', paddingRight: '10px'}}
+                  />{' '}
+                  Announce extended roadmap
+                </p>
+              </div>
             </Parallax>
           </div>
         </section>
