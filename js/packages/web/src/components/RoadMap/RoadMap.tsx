@@ -132,7 +132,7 @@ export const RoadMap = () => {
             <div className="cd-timeline-img cd-picture"></div>
             <Parallax
               animation={{x: 0, opacity: 1, playScale: [0.3, 0.7]}}
-              style={{transform: 'translateX(-100px)', opacity: 0}}
+              style={{transform: 'translateX(100px)', opacity: 0}}
               className="code-box-shape"
             >
               <div className="cd-timeline-content">
