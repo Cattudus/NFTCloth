@@ -52,7 +52,7 @@ export const MainView = () => {
     <div>
       <AboutUs />
       <WhyUs />
-      <ClothingCarousel />
+      {/*<ClothingCarousel />*/}
       {/*<Rarity/>*/}
       <HauntedVillage />
       <SpectralShopSection />
