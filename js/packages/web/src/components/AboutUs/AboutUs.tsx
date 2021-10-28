@@ -87,7 +87,7 @@ export const AboutUs: FC = () => {
           </div>
           <div style={{ paddingTop: '10px' }}>
             <p className="text-header">
-              0.5 SOL
+              0.66 SOL
               <span style={{ paddingLeft: '5px', paddingRight: '5px' }}>
                 <img
                   src="/favicon-96x96.png"
