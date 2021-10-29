@@ -118,6 +118,15 @@ export function FAQ() {
               Mint will be on 24. November at 20:00 CET{' '}
             </p>
           </Panel>
+          <Panel
+            style={{ fontSize: '18px' }}
+            header="How can i get whitelisted?"
+            key="11"
+          >
+            <p style={{ fontSize: '15px', color: 'white' }}>
+              If you want to get whitelisted you need to win giveaway or be in between our 350 top Discord active members.
+            </p>
+          </Panel>
         </Collapse>
       </div>
     </LayoutContent>
