@@ -34,7 +34,7 @@ export const LandmarksSection = () => {
       title: '100%',
       content: 'Airdrop 20 Specters',
       content2: 'Free drop of 100 hoodies and 300 paid hoodies',
-      content3: '1% of royalties will go to community picked charity',
+      content3: '1.5% of royalties will go to community picked charity',
     },
   ];
   return (
