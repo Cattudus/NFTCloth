@@ -67,7 +67,7 @@ export function FAQ() {
           >
             <p style={{ fontSize: '15px', color: 'white' }}>
               There will be 3333 Spectres - 133 spectres will be kept for
-              promotional and marketing purposes. There will never be more than
+              promotional and marketing purposes, 700 specters for whitelisted members. There will never be more than
               3333 Specters.
             </p>
           </Panel>

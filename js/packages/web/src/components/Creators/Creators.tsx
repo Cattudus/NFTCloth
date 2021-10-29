@@ -34,7 +34,7 @@ export function Creators(){
                     <div className="pos-text">{workers[2].position}</div>
                 </div>
                 <div className="creator-info">
-                    <img src="/HauntedSpectral" className="creator-logo" alt=""/>
+                    <img src="/HauntedSpectral.png" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[3].name}</div>
                     <div className="pos-text">{workers[3].position}</div>
                 </div>
