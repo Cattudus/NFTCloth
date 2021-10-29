@@ -6,7 +6,7 @@ interface worker{
   position: string,
   about: string
 }
-export const workers: worker[] = [{about: 'Webs are life',name:'Spectral Jedi', position: 'Web Developer' }, {about: 'UI makes web',name:'Spectral Poltergeist', position: 'Artist / UI|UX' }, {about: 'Loves shit coins',name:'Scary Dev', position: 'Backend Developer' }, {about: 'Spectral Club!',name:'Haunted Spectral', position: 'Marketing - Socials' }]
+export const workers: worker[] = [{about: 'Webs are life',name:'Spectral Jedi', position: 'Web Developer' }, {about: 'UI makes web',name:'Spectral Poltergeist', position: 'Artist / UI|UX' }, {about: 'Loves shit coins',name:'Scary Dev', position: 'Backend Developer' }, {about: 'Spectral Club!',name:'Haunted Spectre', position: 'Marketing - Socials' }]
 
 
 export function Creators(){
@@ -34,7 +34,7 @@ export function Creators(){
                     <div className="pos-text">{workers[2].position}</div>
                 </div>
                 <div className="creator-info">
-                    <img src="/NFTs/6.png" className="creator-logo" alt=""/>
+                    <img src="/HauntedSpectral" className="creator-logo" alt=""/>
                     <div className="pos-text">{workers[3].name}</div>
                     <div className="pos-text">{workers[3].position}</div>
                 </div>
