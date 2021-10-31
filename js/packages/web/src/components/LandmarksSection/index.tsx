@@ -46,12 +46,12 @@ export const LandmarksSection = () => {
       }}
     >
       <LayoutContent>
-        <div className="text-header">LANDMARKS</div>
+        <div className="text-header">MILESTONES</div>
         <div
           className="inside-text"
           style={{ paddingTop: '10px', paddingBottom: '10px' }}
         >
-          We've picked some landmarks - once we hit a target through sell
+          We've picked some milestones - once we hit a target through sell
           percentage, our goal will be clear.
         </div>
         <List
