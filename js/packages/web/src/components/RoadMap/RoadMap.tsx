@@ -36,8 +36,8 @@ export const RoadMap = () => {
                 </p>
                 <p>
                   {' '}
-                  <CloseSquareFilled
-                    style={{color: 'red', paddingRight: '10px'}}
+                  <CheckCircleFilled
+                    style={{color: 'green', paddingRight: '10px'}}
                   />
                   Start sampling hoodies and find the best quality ones
                   (Already sampled few but still no good ones)
@@ -57,8 +57,8 @@ export const RoadMap = () => {
                 <h2>Phase 1</h2>
                 <p>
                   {' '}
-                  <CloseSquareFilled
-                    style={{color: 'red', paddingRight: '10px'}}
+                  <CheckCircleFilled
+                    style={{color: 'green', paddingRight: '10px'}}
                   />{' '}
                   Discord Giveaways!
                 </p>
