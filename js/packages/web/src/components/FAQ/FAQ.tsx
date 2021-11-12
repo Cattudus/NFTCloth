@@ -67,7 +67,7 @@ export function FAQ() {
           >
             <p style={{fontSize: '15px', color: 'white'}}>
               There will be 3333 Spectres - 133 spectres will be kept for
-              promotional and marketing purposes, 700 specters for whitelisted members. There will never be more than
+              promotional and marketing purposes, 200 specters for whitelisted members. There will never be more than
               3333 Specters.
             </p>
           </Panel>
@@ -124,7 +124,7 @@ export function FAQ() {
             key="11"
           >
             <p style={{fontSize: '15px', color: 'white'}}>
-              If you want to get whitelisted you need to win giveaway or be in between our 350 top Discord active
+              If you want to get whitelisted you need to win giveaway or be in between our 50 top Discord active
               members.
             </p>
           </Panel>
