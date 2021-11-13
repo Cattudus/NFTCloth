@@ -1,92 +1,102 @@
-import React, { useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import React, {useMemo} from 'react';
+import {Link} from 'react-router-dom';
 import {Button, Dropdown, Layout, Menu} from 'antd';
-import { ConnectButton, CurrentUserBadge } from '@oyster/common';
-import { useWallet } from '@solana/wallet-adapter-react';
-import { Notifications } from '../Notifications';
+import {ConnectButton, CurrentUserBadge} from '@oyster/common';
+import {useWallet} from '@solana/wallet-adapter-react';
+import {Notifications} from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
 import {InstagramOutlined, MenuOutlined, TwitterOutlined} from '@ant-design/icons';
-import { useMeta } from '../../contexts';
+import {useMeta} from '../../contexts';
 import {LayoutContent} from "../Layout";
 
 // For one single page
-export const SmallBar= () =>{
-  return(
+export const SmallBar = () => {
+  return (
     <Dropdown
-          arrow
-          placement="bottomLeft"
-          trigger={['click']}
-          overlay={
-            <Menu>
-              <Menu.Item>
-                <a href="#RoadMap">Road Map</a>
-              </Menu.Item>
-              <Menu.Item>
-                <a href="#Creators">Creators</a>
-              </Menu.Item>
-              <Menu.Item>
-                <a href="#FAQ">FAQ</a>
-              </Menu.Item>
-            </Menu>
-          }
-        >
-          <MenuOutlined style={{ fontSize: '1.4rem' }} />
-        </Dropdown>
+      arrow
+      placement="bottomLeft"
+      trigger={['click']}
+      overlay={
+        <Menu>
+          <Menu.Item>
+            <Button className="app-btn" href="#RoadMap">RoadMap</Button>
+          </Menu.Item>
+          <Menu.Item>
+            <Button className="app-btn" href="#Creators">Creators</Button>
+          </Menu.Item>
+          <Menu.Item>
+            <Button className="app-btn" href="#FAQ">FAQ</Button>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to={`/howTo`}>
+              <Button className="app-btn">How To</Button>
+            </Link>
+          </Menu.Item>
+        </Menu>
+      }
+    >
+      <MenuOutlined style={{fontSize: '1.4rem'}}/>
+    </Dropdown>
   );
 }
 
-export const AppBar=() => {
-  return(
+export const AppBar = () => {
+  return (
     <LayoutContent>
       <div className="single-app-bar">
         <div className="app-navigation small-nav">
-          <div style={{paddingRight:"15px", paddingLeft: "8px"}} className="nft-div">
-            <img src="/NFTs/1.png" className="bar-nft" alt="" />
+          <div style={{paddingRight: "15px", paddingLeft: "8px"}} className="nft-div">
+            <img src="/NFTs/1.png" className="bar-nft" alt=""/>
           </div>
           <div>The Spectral Club</div>
           <div className="flex-item">
             <div className="horizontal-line"/>
           </div>
           <div className="small-nav">
-          <SmallBar/>
+            <SmallBar/>
+          </div>
         </div>
+
+
+        <div className="app-navigation big-nav">
+          <div style={{paddingRight: "15px", paddingLeft: "8px"}}>
+            <img src="/NFTs/1.png" className="bar-nft" alt=""/>
+          </div>
+          <div>
+            <Button className="app-btn" href="#">The Spectral Club</Button></div>
+          <div className="flex-item">
+            <div className="horizontal-line"/>
+          </div>
+          <div>
+            <Button className="app-btn" href="#RoadMap">RoadMap</Button>
+          </div>
+          <div >
+            <Button className="app-btn" href="#Creators">Creators</Button>
+          </div>
+          <div>
+            <Button className="app-btn" href="#FAQ">FAQ</Button>
+          </div>
+          <div >
+            <Link to={`/howTo`}>
+              <Button className="app-btn">How To</Button>
+            </Link>
+          </div>
         </div>
-
-
-
-       <div className="app-navigation big-nav">
-         <div style={{paddingRight:"15px", paddingLeft: "8px"}}>
-           <img src="/NFTs/1.png" className="bar-nft" alt="" />
-         </div>
-         <div>The Spectral Club</div>
-         <div className="flex-item">
-           <div className="horizontal-line"/>
-         </div>
-           <div className="flex-item">
-             <a href="#RoadMap">Road Map</a>
-           </div>
-           <div className="flex-item">
-             <a href="#Creators">Creators</a>
-           </div>
-           <div className="flex-item">
-             <a href="#FAQ">FAQ</a>
-           </div>
-       </div>
 
         <div className="socials">
           <div className="flex-item">
             <a href="https://twitter.com/TheSpectralClub" target="_blank" rel="noopener noreferrer">
-            <TwitterOutlined style={{fontSize: '25px'}} />
+              <TwitterOutlined style={{fontSize: '25px'}}/>
             </a>
           </div>
           <div className="flex-item">
             <a href="https://discord.gg/npsNdxZQne" target="_blank" rel="noopener noreferrer">
-            <i style={{fontSize: '25px'}} className="fab fa-discord"/>
+              <i style={{fontSize: '25px'}} className="fab fa-discord"/>
             </a>
           </div>
           <div className="flex-item">
             <a href="https://www.instagram.com/thespectralclub/" target="_blank" rel="noopener noreferrer">
-              <InstagramOutlined style={{fontSize: '25px'}} />
+              <InstagramOutlined style={{fontSize: '25px'}}/>
             </a>
           </div>
         </div>

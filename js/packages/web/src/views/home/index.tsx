@@ -88,7 +88,9 @@ export const Footer: FC = () => {
           </div>
             <div>
               As seen on
-              <img style={{height: '80px', width: '80px'}} src="/Approvals/nft-calendar-transparent.png"/>
+              <a href="https://nftcalendar.io/event/the-spectral-club/">
+              <img style={{height: '80px', width: '80px'}}  src="/Approvals/nft-calendar-transparent.png"/>
+              </a>
             </div>
         </div>
       </div>

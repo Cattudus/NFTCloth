@@ -15,13 +15,19 @@ import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
 import {Shop} from "./views/shop";
 import {AppLayout} from "./components/Layout";
+import {HowTo} from "./views/howto";
 
 export function Routes() {
   return (
     <>
-     <AppLayout>
-       <HomeView/>
-     </AppLayout>
+      <HashRouter basename={'/'}>
+        <Providers>
+          <Switch>
+            <Route exact path="/howTo" component={() => <AppLayout><HowTo />  </AppLayout>} />
+            <Route path="/" component={() =>   <AppLayout><HomeView/> </AppLayout>} />
+          </Switch>
+        </Providers>
+      </HashRouter>
       {/*<HashRouter basename={'/'}>*/}
       {/*  <Providers>*/}
       {/*    <Switch>*/}
