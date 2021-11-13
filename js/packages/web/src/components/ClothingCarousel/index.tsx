@@ -6,24 +6,22 @@ export const ClothingCarousel = () =>{
     <Carousel autoplay>
     <div>
       <img
-        style={{height: "400px", width: "100%", objectFit: "cover"}}
+        style={{height: "700px", width: "100%", objectFit: "scale-down"}}
         alt="example"
-        src="https://martinvalen.com/15010-large_default/men-s-oversize-basic-hoodie-sweatshirt-with-kangaroo-pocket-in-white.jpg"
+        src="/Hoodies/1.JPG"
       />
     </div>
     <div>
       <img
-        style={{height: "400px", width: "100%", objectFit: "cover"}}
+        style={{height: "700px", width: "100%", objectFit: "scale-down"}}
         alt="example"
-        src="https://martinvalen.com/15010-large_default/men-s-oversize-basic-hoodie-sweatshirt-with-kangaroo-pocket-in-white.jpg"
-      />
+        src="/Hoodies/2.JPG"      />
     </div>
     <div>
       <img
-        style={{height: "400px", width: "100%", objectFit: "cover"}}
+        style={{height: "700px", width: "100%", objectFit: "scale-down"}}
         alt="example"
-        src="https://martinvalen.com/15010-large_default/men-s-oversize-basic-hoodie-sweatshirt-with-kangaroo-pocket-in-white.jpg"
-      />
+        src="/Hoodies/3.JPG"      />
     </div>
   </Carousel>
   );
