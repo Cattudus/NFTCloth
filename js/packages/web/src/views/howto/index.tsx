@@ -18,7 +18,7 @@ export const HowTo = () => {
           </div>
           <div style={{paddingTop: '30px'}}>
             <div className="inside-text">
-              2. After adding it you need to create new wallet. Save you secret phrase! You can lost your wallet if you
+              2. After adding it you need to create new wallet. Save your secret phrase! You can lost your wallet if you
               don't save it!
             </div>
           </div>
@@ -41,7 +41,7 @@ export const HowTo = () => {
           <div style={{paddingTop: '30px'}}>
             <div className="inside-text">
               5. Into address paste your phantom wallet address that we copied before. In network choose solana network!
-              For our NFT you will need 0.66 + fee. So send approx. 0.68 SOL. The you can click withdraw.
+              For our NFT you will need 0.66 + fee. So send approx. 0.68 SOL. Then you can click withdraw.
             </div>
           </div>
           <div style={{paddingTop: '30px'}}>
