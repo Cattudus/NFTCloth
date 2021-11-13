@@ -1,5 +1,5 @@
-import { HashRouter, Route, Switch } from 'react-router-dom';
-import { Providers } from './providers';
+import {HashRouter, Route, Switch} from 'react-router-dom';
+import {Providers} from './providers';
 import {
   AnalyticsView,
   ArtCreateView,
@@ -11,8 +11,8 @@ import {
   AuctionView,
   HomeView,
 } from './views';
-import { AdminView } from './views/admin';
-import { BillingView } from './views/auction/billing';
+import {AdminView} from './views/admin';
+import {BillingView} from './views/auction/billing';
 import {Shop} from "./views/shop";
 import {AppLayout} from "./components/Layout";
 import {HowTo} from "./views/howto";
@@ -23,8 +23,16 @@ export function Routes() {
       <HashRouter basename={'/'}>
         <Providers>
           <Switch>
-            <Route exact path="/howTo" component={() => <AppLayout><HowTo />  </AppLayout>} />
-            <Route path="/" component={() =>   <AppLayout><HomeView/> </AppLayout>} />
+            <Route exact path="/howTo" component={() => <AppLayout><HowTo/> </AppLayout>}/>
+            <Route
+              exact
+              path="/artworks/:id?"
+              component={() => <ArtworksView/>}
+            />
+            <Route exact path="/art/:id" component={() => <ArtView/>}/>
+            <Route exact path="/artists/:id" component={() => <ArtistView/>}/>
+            <Route exact path="/artists" component={() => <ArtistsView/>}/>
+            <Route path="/" component={() => <AppLayout><HomeView/> </AppLayout>}/>
           </Switch>
         </Providers>
       </HashRouter>

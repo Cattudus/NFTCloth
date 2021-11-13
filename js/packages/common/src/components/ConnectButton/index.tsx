@@ -10,6 +10,7 @@ export interface ConnectButtonProps
   allowWalletChange?: boolean;
 }
 
+
 export const ConnectButton = (props: ConnectButtonProps) => {
   const { onClick, children, disabled, allowWalletChange, ...rest } = props;
 

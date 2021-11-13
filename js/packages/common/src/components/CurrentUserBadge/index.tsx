@@ -3,7 +3,7 @@ import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { useNativeAccount } from '../../contexts/accounts';
 import { formatNumber } from '../../utils';
-import { Popover } from 'antd';
+import {Button, Popover} from 'antd';
 import { Settings } from '../Settings';
 
 export const CurrentUserBadge = (props: {
@@ -56,7 +56,6 @@ export const CurrentUserBadge = (props: {
         trigger="click"
       >
         <div className="wallet-key" style={walletKeyStyle}>
-          <span style={{ marginRight: '0.5rem' }}>{wallet.name}</span>
           <img src={wallet.icon} style={iconStyle} />
         </div>
       </Popover>

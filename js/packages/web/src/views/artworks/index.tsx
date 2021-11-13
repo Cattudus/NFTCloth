@@ -7,6 +7,7 @@ import { useCreatorArts, useUserArts } from '../../hooks';
 import { useMeta } from '../../contexts';
 import { CardLoader } from '../../components/MyLoader';
 import { useWallet } from '@solana/wallet-adapter-react';
+import {LayoutContent} from "../../components/Layout";
 
 const { TabPane } = Tabs;
 
@@ -79,7 +80,8 @@ export const ArtworksView = () => {
   //}
 
   return (
-    <Layout style={{ margin: 0, marginTop: 30 }}>
+    <div style={{ margin: 0, paddingTop: 80 }}>
+    <LayoutContent style={{ margin: 0, paddingTop: 80 }}>
       <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
         <Col style={{ width: '100%', marginTop: 10 }}>
           <Row>
@@ -91,14 +93,15 @@ export const ArtworksView = () => {
                 tab={<span className="tab-title">My Drops</span>}
                 key={ArtworkViewState.Metaplex}
               >
-                <div>Helo</div>
+                <div className="inside-text">This tabs will work after mint!</div>
               </TabPane>
               {connected && (
                 <TabPane
                   tab={<span className="tab-title">Owned NFT</span>}
                   key={ArtworkViewState.Owned}
                 >
-                  {artworkGrid}
+                  {/*{artworkGrid}*/}
+                  <div className="inside-text">This tabs will work after mint!</div>
                 </TabPane>
               )}
               {connected && (
@@ -106,13 +109,14 @@ export const ArtworksView = () => {
                   tab={<span className="tab-title">My Orders</span>}
                   key={ArtworkViewState.Created}
                 >
-                  <div>Helo</div>
+                  <div className="inside-text">This tabs will work after mint!</div>
                 </TabPane>
               )}
             </Tabs>
           </Row>
         </Col>
       </Content>
-    </Layout>
+    </LayoutContent>
+    </div>
   );
 };

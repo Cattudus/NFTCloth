@@ -3,10 +3,7 @@ import {Link} from 'react-router-dom';
 import {Button, Dropdown, Layout, Menu} from 'antd';
 import {ConnectButton, CurrentUserBadge} from '@oyster/common';
 import {useWallet} from '@solana/wallet-adapter-react';
-import {Notifications} from '../Notifications';
-import useWindowDimensions from '../../utils/layout';
 import {InstagramOutlined, MenuOutlined, TwitterOutlined} from '@ant-design/icons';
-import {useMeta} from '../../contexts';
 import {LayoutContent} from "../Layout";
 
 // For one single page
@@ -41,6 +38,7 @@ export const SmallBar = () => {
 }
 
 export const AppBar = () => {
+    const { connected } = useWallet();
   return (
     <LayoutContent>
       <div className="single-app-bar">
@@ -70,19 +68,30 @@ export const AppBar = () => {
           <div>
             <Button className="app-btn" href="#RoadMap">RoadMap</Button>
           </div>
-          <div >
+          <div>
             <Button className="app-btn" href="#Creators">Creators</Button>
           </div>
           <div>
             <Button className="app-btn" href="#FAQ">FAQ</Button>
           </div>
-          <div >
+          <div>
             <Link to={`/howTo`}>
               <Button className="app-btn">How To</Button>
             </Link>
           </div>
         </div>
-
+        { connected ?
+          <div style={{paddingLeft: '100px'}}>
+            {/*<CurrentUserBadge/>*/}
+          <Link to={`/artworks`}>
+            <Button className="app-btn">My Profile</Button>
+          </Link>
+          </div>
+          :
+          <div style={{paddingLeft: '100px'}}>
+          <ConnectButton  type="primary" allowWalletChange/>
+          </div>
+        }
         <div className="socials">
           <div className="flex-item">
             <a href="https://twitter.com/TheSpectralClub" target="_blank" rel="noopener noreferrer">

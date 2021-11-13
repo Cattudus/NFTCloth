@@ -66,15 +66,10 @@ export const WalletModal: FC = () => {
           marginBottom: 10,
         }}
       >
-        M
+        SC
       </div>
 
       <h2>{selected ? 'Change provider' : 'Welcome To The Spectral Club'}</h2>
-      <p>
-        {selected
-          ? 'Feel free to switch wallet provider'
-          : 'You must be signed to enter My Profile section'}
-      </p>
 
       <br />
       {selected || showWallets ? (
