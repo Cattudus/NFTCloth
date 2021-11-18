@@ -71,8 +71,8 @@ export const RoadMap = () => {
                 </p>
                 <p>
                   {' '}
-                  <CloseSquareFilled
-                    style={{color: 'red', paddingRight: '10px'}}
+                  <CheckCircleFilled
+                    style={{color: 'green', paddingRight: '10px'}}
                   />{' '}
                   First partnerships - will announce on twitter and discord
                 </p>

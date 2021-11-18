@@ -54,14 +54,12 @@ const CachedImageContent = ({
 }) => {
   const [loaded, setLoaded] = useState<boolean>(false);
   const { cachedBlob } = useCachedImage(uri || '');
-
   return (
     <Image
       src={cachedBlob}
       preview={preview}
       wrapperClassName={className}
       loading="lazy"
-      wrapperStyle={{ ...style }}
       onLoad={e => {
         setLoaded(true);
       }}
