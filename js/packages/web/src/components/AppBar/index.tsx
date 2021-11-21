@@ -5,6 +5,7 @@ import {ConnectButton, CurrentUserBadge} from '@oyster/common';
 import {useWallet} from '@solana/wallet-adapter-react';
 import {InstagramOutlined, MenuOutlined, TwitterOutlined} from '@ant-design/icons';
 import {LayoutContent} from "../Layout";
+import useWindowDimensions from "../../utils/layout";
 
 // For one single page
 export const SmallBar = () => {
@@ -38,7 +39,18 @@ export const SmallBar = () => {
 }
 
 export const AppBar = () => {
-    const { connected } = useWallet();
+  const {connected} = useWallet();
+  const {width} = useWindowDimensions();
+
+  function disabled() {
+    if (width < 800) {
+      return 'disable'
+    } else {
+      return ''
+    }
+  }
+
+
   return (
     <LayoutContent>
       <div className="single-app-bar">
@@ -80,16 +92,16 @@ export const AppBar = () => {
             </Link>
           </div>
         </div>
-        { connected ?
-          <div style={{paddingLeft: '100px'}}>
+        {connected ?
+          <div className={disabled()} style={{paddingLeft: '100px'}}>
             {/*<CurrentUserBadge/>*/}
-          <Link to={`/artworks`}>
-            <Button className="app-btn">My Profile</Button>
-          </Link>
+            <Link to={`/artworks`}>
+              <Button className="app-btn">My Profile</Button>
+            </Link>
           </div>
           :
-          <div style={{paddingLeft: '100px'}}>
-          <ConnectButton  type="primary" allowWalletChange/>
+          <div className={disabled()} style={{paddingLeft: '100px'}}>
+            <ConnectButton type="primary" allowWalletChange/>
           </div>
         }
         <div className="socials">
