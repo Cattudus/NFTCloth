@@ -67,7 +67,7 @@ export function FAQ() {
           >
             <p style={{fontSize: '15px', color: 'white'}}>
               There will be 3333 Spectres - 133 spectres will be kept for
-              promotional and marketing purposes, 100 specters for whitelisted members. There will never be more than
+              promotional and marketing purposes, 100 specters will be in pre-sale for 0.33 SOL. There will never be more than
               3333 Specters.
             </p>
           </Panel>
@@ -116,16 +116,6 @@ export function FAQ() {
           >
             <p style={{fontSize: '15px', color: 'white'}}>
               Mint will be on 24. November at 20:00 CET{' '}
-            </p>
-          </Panel>
-          <Panel
-            style={{fontSize: '18px'}}
-            header="How can i get whitelisted?"
-            key="11"
-          >
-            <p style={{fontSize: '15px', color: 'white'}}>
-              If you want to get whitelisted you need to win giveaway or be in between our 20 top Discord active
-              members.
             </p>
           </Panel>
         </Collapse>
